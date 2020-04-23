@@ -1,4 +1,8 @@
+/* psql "host=mperndemo.postgres.database.azure.com port=5432 dbname=mpernauth user=mpernadmin@mperndemo password=Rxs92ZkaGApQGrkA sslmode=require" */
+
 CREATE DATABASE mpernauth;
+
+/* \c mpernauth */
 
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
