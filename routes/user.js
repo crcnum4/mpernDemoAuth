@@ -9,6 +9,7 @@ const secretkey = require("../config/default").secretOrKey;
 // @desc		Register a new user account
 // @access	public
 router.post("/", async (req, res) => {
+  console.log("request recieved");
   try {
     const { username, email } = req.body;
     let { password } = req.body;
@@ -50,6 +51,7 @@ router.post("/", async (req, res) => {
 // @desc		route to authenticate login attempt
 // @access	public
 router.post("/login", async (req, res) => {
+  console.log("request recieved");
   try {
     const { username, password } = req.body;
 
